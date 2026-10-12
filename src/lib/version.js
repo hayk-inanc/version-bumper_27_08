@@ -32,7 +32,7 @@ export function bumpVersion(input, releaseType) {
   const { major, minor, patch } = parseVersion(input)
 
   switch (releaseType) {
-    case 'major':
+    case 'major_':
       return formatVersion({ major: major + 1, minor: 0, patch: 0 })
     case 'minor':
       return formatVersion({ major, minor: minor + 1, patch: 0 })
